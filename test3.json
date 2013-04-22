@@ -1,0 +1,36 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "arthritis",
+      "children": [
+        {
+          "name":"Humira","manufacturer":"Abbott Laboratories","size":1206377,"sales":"1.2 bil","treats":"rheumatoid arthritis, chronic plaque psoriasis, Crohn's disease","aka":"adalimumab"
+        },
+        {
+          "name":"Enbrel","manufacturer":"Amgen Inc.","size":1088533,"sales":"1.1 bil","treats":"psoriatic arthritis, rheumatoid arthritis, plaque psoriasis","aka":"etanercept"
+        },
+        
+        {
+          "name":"Remicade","manufacturer":"Centocor Ortho Biotech, Inc","size":935584,"sales":"935 mil","treats":"rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn disease, plaque psoriasis, and ulcerative colitis","aka":"infliximab"
+        },
+        {
+          "name":"Rituxan","manufacturer":"Genentech, Inc","size":779026,"sales":"779 mil","treats":"rheumatoid arthritis, granulomatosis with polyangiitis, microscopic polyangiitis, also used in combination with other cancer medicines to treat non-Hodgkin's lymphoma","aka":"rituximab"
+        },
+        {"name":"Celebrex","manufacturer":"Pfizer Inc","size":505850,"sales":"506 mil","treats":" arthritis (osteoarthritis, rheumatoid arthritis, or juvenile rheumatoid arthritis) in children and adults, ankylosing spondylitis, or menstrual cramps","aka":"celecoxib"
+        }
+      ]
+    },
+    {
+      "name": "asthma",
+      "children": [
+        {
+          "name":"Advair Diskus","manufacturer":"GlaxoSmithKline","size":1204874,"sales":"1.2 bil","treats":"asthma, bronchitis, and chronic obstructive pulmonary disease","aka":"fluticasone propionate"
+        },
+        {
+          "name":"Spiriva","manufacturer":"Boehringer Ingelheim Pharmaceuticals, Inc","size":702246,"sales":"702 mil","treats":"chronic obstructive pulmonary disease","aka":"tiotropium bromide"
+        }
+      ]
+    }
+  ]
+}
