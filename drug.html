@@ -4,14 +4,30 @@
   <meta charset="utf-8">
   <style>
     /*create a separate css stylesheet later*/
-    text {
-      font: 10px sans-serif;
+    #graph{
+      float:left;
+      border: 2px solid #0088dd;
     }
 
+
+    text {
+      font: 12px sans-serif;
+    }
+
+    h1{
+    margin-left: 75px;
+    font-family: sans-serif;
+    }    
+    
     circle {
       fill: #1f77b4; /*blue*/
       fill-opacity: .25;
       stroke: #1f77b4;
+      stroke-width: 1px;
+    }
+
+    circle:hover {
+      stroke: #ffcc00;
       stroke-width: 1px;
     }
 
@@ -21,29 +37,40 @@
     }
 
     .leaf circle:hover {
-      stroke: #ffcc00;
-      stroke-width: 1px;
+      fill #ffcc00;
+      
     }
 
     #info {
+      margin-top: 400px;
+      padding: 20px;
+      width: 500px;
+
+      font: 25px sans-serif;
       font-weight: bold;
       float:right;
       display: none;
+      background-color: #cccccc;
     }
 
     #info span {
       font-weight: normal;
+      padding: 10px;
     }
   </style>
   <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 <body>
-
+    <h1>
+      Pharma Lookup - Top 100 drugs based on U.S. sales
+    </h1>
 <script type="text/javascript">
 
 
+
 var diameter = 960,
+    radius = diameter / 2,
     format = d3.format(",d"); /*d = anonymous variable*/
 
 var pack = d3.layout.pack() /*Create new pack layout with default settings: the default sort order is by ascending value; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.*/
@@ -63,22 +90,36 @@ d3.json("test3.json", function(error, root) {
       .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
+
   // node.append("title")
   //     .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.size)); }); /*text which appears upon mousehover*/
 
-  //node.append("title")
-  //    .text(function(d) {return d.name});
-
+  // node.append("text")
+  //     .text(function(d) { return d.name; + (d.children ? "" : ": " + format(d.size)); });
 
   node.append("circle")
       .attr("r", function(d) { return d.r; })
       .on("click", function (event) {
         var name = event.name;
+        if (name === "flare") return;
         if (name === "arthritis") return;
-        var manufacturer = event.manufacturer;
+        if (name === "asthma") return;
+        if (name === "cancer") return;
         $("#drug-name").text(name);
+
+        var aka = event.aka;     
+        $("#aka").text(aka);
+
+        var treats = event.treats;
+        $("#treats").text(treats);
+        
+        var manufacturer = event.manufacturer;
         $("#manufacturer").text(manufacturer);
+        
+        var sales = event.sales;
         $("#sales").text(sales);
+
+        var info = event.info;
         $("#info").show();
       });
 
@@ -91,15 +132,22 @@ d3.json("test3.json", function(error, root) {
 d3.select(self.frameElement).style("height", diameter + "px");
 
 </script>
+
 <div id="info">
   <div>
     Drug name: <span id="drug-name"></span>
   </div>
   <div>
+    Generic name: <span id="aka"></span>
+  </div>
+  <div>
+    Treats: <span id="treats"></span>
+  </div>
+  <div>
     Manufacturer: <span id="manufacturer"></span>
   </div>
   <div>
-    Sales: $<span id="sales"></span>
+    U.S. sales in 2012 Q4: $<span id="sales"></span>
   </div>
 </div>
 </body>
