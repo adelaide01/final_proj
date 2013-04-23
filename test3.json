@@ -1,5 +1,5 @@
 {
-  "name": "flare",
+  "name": "Click on a circle for info",
   "children": [
     {
       "name": "arthritis",
@@ -84,7 +84,39 @@
 
       }
     ]
-  }
+  },
+{
+      "name": "diabetes",
+      "children": [
+
+{"name":"Januvia","manufacturer":"Merck & Co., Inc.","size":658957,"sales":"659 mil","treats":"blood sugar levels for type 2 diabetics","aka":"sitagliptin phosphate"},
+{"name":"Lantus","manufacturer":"Sanofi-Aventis","size":599359,"sales":"559 mil","treats":"type 1 or 2 diabetics who need synthetic insulin, a hormone that helps get sugar from the blood to the muscles","aka":"insulin glargine"},
+{"name":"Lantus Solostar","manufacturer":"Sanofi-Aventis","size":597688,"sales":"597 mil","treats":"insulin under brand name Lantus packaged in a pen-shaped dispenser","aka":"insulin glargine"}
+]
+},
+
+{
+      "name": "HIV",
+      "children": [
+{"name":"Atripla","manufacturer":"Gilead Sciences, Inc.","size":695411,"sales":"695 mil","treats":"HIV using three antiretroviral drugs in one tablet","aka":"emtricitabine / tenofovir / efavirenz"},
+{"name":"Truvada","manufacturer":"Gilead Sciences, Inc.","size":565853,"sales":"566 mil","treats":"HIV using two antiretroviral drugs in one tablet","aka":"tenofovir/emtricitabine"}
+]
+},
+
+{     "name": "painkiller",
+      "children": [
+{"name":"OxyContin","manufacturer":"NA","size":668415,"sales":"668 mil","treats":"post-operative pain","aka":"oxycodone"},
+{"name":"Lyrica","manufacturer":"Pfizer Inc","size":511571,"sales":"512 mil","treats":"nerve and muscle pain caused by diabetes, shingles, fibromyalgia, or spinal cord injury","aka":"pregabalin"}
+]
+},
+
+{
+      "name": "psych",
+      "children": [
+{"name":"Abilify","manufacturer":"Otsuka Pharmaceutical Co.","size":1478301,"sales":"1.5 bil","treats":"schizophrenia, bipolar disorder, depression, autism","aka":"aripiprazole"},
+{"name":"Cymbalta","manufacturer":"Eli Lilly and Company","size":1227484,"sales":"1.2 bil","treats":"major depressive disorder, general anxiety disorder, fibromyalgia","aka":"duloxetine"}
+]
+}
 
 
 

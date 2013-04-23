@@ -4,11 +4,9 @@
   <meta charset="utf-8">
   <style>
     /*create a separate css stylesheet later*/
-    #graph{
-      float:left;
-      border: 2px solid #0088dd;
+    body {
+      background-color: #3e6b85;  
     }
-
 
     text {
       font: 12px sans-serif;
@@ -17,27 +15,29 @@
     h1{
     margin-left: 75px;
     font-family: sans-serif;
+    color: #ffffff;
     }    
     
     circle {
-      fill: #1f77b4; /*blue*/
-      fill-opacity: .25;
-      stroke: #1f77b4;
+      fill: #63aad4; /*blue*/
+      fill-opacity: .15;
+      stroke: #b8b8b8;
       stroke-width: 1px;
     }
 
     circle:hover {
-      stroke: #ffcc00;
-      stroke-width: 1px;
+      fill-opacity: .01;
+      stroke: #ccccc0;
+      stroke-width: 2px;
     }
 
     .leaf circle {
-      fill: #ff7f0e; /*orange*/
-      fill-opacity: 1;
+      fill: #ff8400; /*orange*/
+      fill-opacity: .60;
     }
 
     .leaf circle:hover {
-      fill #ffcc00;
+      fill-opacity: 1;
       
     }
 
@@ -50,7 +50,7 @@
       font-weight: bold;
       float:right;
       display: none;
-      background-color: #cccccc;
+      color: #ffffff;
     }
 
     #info span {
@@ -63,7 +63,7 @@
 </head>
 <body>
     <h1>
-      Pharma Lookup - Top 100 drugs based on U.S. sales
+      Pharma Lookup - Top 100 drugs based on U.S. sales (in $000s)
     </h1>
 <script type="text/javascript">
 
@@ -71,6 +71,7 @@
 
 var diameter = 960,
     radius = diameter / 2,
+    
     format = d3.format(",d"); /*d = anonymous variable*/
 
 var pack = d3.layout.pack() /*Create new pack layout with default settings: the default sort order is by ascending value; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.*/
@@ -91,8 +92,8 @@ d3.json("test3.json", function(error, root) {
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
 
-  // node.append("title")
-  //     .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.size)); }); /*text which appears upon mousehover*/
+node.append("title")
+    .text(function(d) { return d.name + (d.children ? "" : ": $" + format(d.size)); }); /*text which appears upon mousehover*/
 
   // node.append("text")
   //     .text(function(d) { return d.name; + (d.children ? "" : ": " + format(d.size)); });
@@ -101,10 +102,13 @@ d3.json("test3.json", function(error, root) {
       .attr("r", function(d) { return d.r; })
       .on("click", function (event) {
         var name = event.name;
-        if (name === "flare") return;
+        if (name === "Click on a circle for info") return;
         if (name === "arthritis") return;
         if (name === "asthma") return;
         if (name === "cancer") return;
+        if (name === "psych") return;
+        if (name === "HIV") return;
+        if (name === "diabetes") return;
         $("#drug-name").text(name);
 
         var aka = event.aka;     
