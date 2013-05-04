@@ -1,0 +1,271 @@
+{
+  "name": "Click on a circle for info",
+  "children": [
+
+  {
+    "name": "asthma", 
+    "children": [
+      {
+        "name": "GlaxoSmithKline", 
+        "children": [
+          {
+            "treats": "asthma, bronchitis, and chronic obstructive pulmonary disease", 
+            "name": "Advair Diskus", 
+            "sales": "1.2 bil", 
+            "aka": "fluticasone propionate", 
+            "size": 1204874, 
+            "units_sold": 5853, 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "GlaxoSmithKline"
+          }
+        ]
+      }, 
+      {
+        "name": "Boehringer Ingelheim Pharmaceuticals Inc.", 
+        "children": [
+          {
+            "treats": "chronic obstructive pulmonary disease", 
+            "name": "Spiriva", 
+            "sales": "702 mil", 
+            "aka": "tiotropium bromide", 
+            "size": 702246, 
+            "units_sold": 3664,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Boehringer Ingelheim Pharmaceuticals Inc."
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "HIV", 
+    "children": [
+      {
+        "name": "Gilead Sciences Inc.", 
+        "children": [
+          {
+            "treats": "HIV using three antiretroviral drugs in one tablet", 
+            "name": "Atripla", 
+            "sales": "695 mil", 
+            "aka": "emtricitabine / tenofovir / efavirenz", 
+            "size": 695411, 
+            "units_sold": 483, 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Gilead Sciences Inc."
+          }, 
+          {
+            "treats": "HIV using two antiretroviral drugs in one tablet", 
+            "name": "Truvada", 
+            "sales": "566 mil", 
+            "aka": "tenofovir/emtricitabine", 
+            "size": 565853, 
+            "units_sold": 599,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Gilead Sciences Inc."
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "cancer", 
+    "children": [
+      {
+        "name": "Amgen Inc.", 
+        "children": [
+          {
+            "treats": "growth of white blood cells, particularly for patients undergoing chemotherapy to prevent infections", 
+            "name": "Neulasta", 
+            "sales": "803 mil", 
+            "aka": "pegfilgrastim", 
+            "size": 803286, 
+            "units_sold": 316,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Amgen Inc."
+          }
+        ]
+      }, 
+      {
+        "name": "Genentech Inc.", 
+        "children": [
+          {
+            "treats": "colon cancer, non small cell lung cancer, and other types of cancer", 
+            "name": "Avastin", 
+            "sales": "634 mil", 
+            "aka": "bevacizumab", 
+            "size": 634201, 
+            "units_sold": 462,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Genentech Inc."
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "blood pressure", 
+    "children": [
+      {
+        "name": "Novartis Corporation", 
+        "children": [
+          {
+            "treats": "abnormally high blood pressure (hypertension)", 
+            "name": "Diovan", 
+            "sales": "475 mil", 
+            "aka": "valsartan", 
+            "size": 474603, 
+            "units_sold": 1890,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Novartis Corporation"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "arthritis", 
+    "children": [
+      {
+        "name": "Abbott Laboratories", 
+        "children": [
+          {
+            "treats": "rheumatoid arthritis, chronic plaque psoriasis, Crohn\\\u2019s disease", 
+            "name": "Humira", 
+            "sales": "1.2 bil", 
+            "aka": "adalimumab", 
+            "size": 1206377, 
+            "units_sold": 669, 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Abbott Laboratories"
+          }
+        ]
+      }, 
+      {
+        "name": "Amgen Inc.", 
+        "children": [
+          {
+            "treats": "psoriatic arthritis, rheumatoid arthritis, plaque psoriasis", 
+            "name": "Enbrel", 
+            "sales": "1.1 bil", 
+            "aka": "etanercept", 
+            "size": 1088533, 
+            "units_sold": 1040,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Amgen Inc."
+          }
+        ]
+      }, 
+      {
+        "name": "Pfizer Inc", 
+        "children": [
+          {
+            "treats": "arthritis (osteoarthritis, rheumatoid arthritis, or juvenile rheumatoid arthritis) in children and adults, ankylosing spondylitis, or menstrual cramps", 
+            "name": "Celebrex", 
+            "sales": "506 mil", 
+            "aka": "celecoxib", 
+            "size": 505850, 
+            "units_sold": 1061,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Pfizer Inc"
+          }
+        ]
+      }, 
+      {
+        "name": "Centocor Ortho Biotech Inc.", 
+        "children": [
+          {
+            "treats": "rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn disease, plaque psoriasis, and ulcerative colitis", 
+            "name": "Remicade", 
+            "sales": "935 mil", 
+            "aka": "infliximab", 
+            "size": 935584, 
+            "units_sold": 1551,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Centocor Ortho Biotech Inc."
+          }
+        ]
+      }, 
+      {
+        "name": "Genentech Inc.", 
+        "children": [
+          {
+            "treats": "rheumatoid arthritis, granulomatosis with polyangiitis, microscopic polyangiitis, also used in combination with other cancer medicines to treat non-Hodgkin\\\u2019s lymphoma", 
+            "name": "Rituxan", 
+            "sales": "779 mil", 
+            "aka": "rituximab", 
+            "size": 779026, 
+            "units_sold": 550,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Genentech Inc."
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "cholesterol", 
+    "children": [
+      {
+        "name": "AstraZeneca Pharmaceuticals", 
+        "children": [
+          {
+            "treats": "lowers high levels of cholesterol and fats", 
+            "name": "Crestor", 
+            "sales": "1.3 bil", 
+            "aka": "rosuvastatin", 
+            "size": 1275483, 
+            "units_sold": 4230,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "AstraZeneca Pharmaceuticals"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "diabetes", 
+    "children": [
+      {
+        "name": "Merck & Co. Inc.", 
+        "children": [
+          {
+            "treats": "synthetic insulin for diabetics", 
+            "name": "Januvia", 
+            "sales": "659 mil", 
+            "aka": "sitagliptin phosphate", 
+            "size": 658957, 
+            "units_sold": 2369,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Merck & Co. Inc."
+          }
+        ]
+      }, 
+      {
+        "name": "Sanofi-Aventis", 
+        "children": [
+          {
+            "treats": "insulin aspart", 
+            "name": "Lantus", 
+            "sales": "559 mil", 
+            "aka": "insulin glargine", 
+            "size": 599359, 
+            "units_sold": 3500,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "manufacturer": "Sanofi-Aventis"
+          }, 
+          {
+            "treats": "insulin under brand name Lantus packaged in a pen-shaped dispenser", 
+            "name": "Lantus Solostar", 
+            "sales": "597 mil", 
+            "aka": "insulin glargine", 
+            "size": 600000, 
+            "units_sold": 4668,
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
+            "manufacturer": "Sanofi-Aventis"
+          }
+        ]
+      }
+    ]
+  }
+]
+}

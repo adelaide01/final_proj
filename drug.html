@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title> Pills </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootswatch/2.3.1/spacelab/bootstrap.min.css">
+  <style>
+    /*create a separate css stylesheet later*/
+
+    body {
+      background-color: #3e6b85;  
+    }
+    
+    #graph {
+      float:left;
+      margin: 50px;
+    }
+    
+    text {
+      font: 12px sans-serif;
+    }
+
+    h1{
+    margin-left: 75px;
+    font-family: sans-serif;
+    color: #ffffff;
+    }    
+    
+    circle {
+      fill: #63aad4; /*blue*/
+      fill-opacity: .15;
+      stroke: #b8b8b8;
+      stroke-width: 1px;
+    }
+
+    circle:hover {
+      fill-opacity: .01;
+      stroke: #ccccc0;
+      stroke-width: 2px;
+    }
+
+    .leaf circle {
+      fill: #ff8400; /*orange*/
+      fill-opacity: .60;
+    }
+
+    .leaf circle:hover {
+      fill-opacity: 1;
+      
+    }
+
+    .leaf text{
+      pointer-events: none;
+    }
+
+
+    #info {
+      padding: 0px;
+      width: 650px;
+      margin: 50px;
+      font: 25px sans-serif;
+      font-weight: bold;
+      float:left;
+      display: none;
+      color: #ffffff;
+    }
+
+    #info span {
+      font-weight: normal;
+      
+    }
+  </style>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+    <h1>
+      Pharma Lookup - Top drugs based on U.S. sales (in $000s)
+    </h1>
+    <div id = "graph"></div>
+
+
+<script type="text/javascript">
+
+
+
+var diameter = 960,
+    radius = diameter / 2,
+    
+    format = d3.format(",d"); /*d = anonymous variable*/
+
+var pack = d3.layout.pack() /*Create new pack layout with default settings: the default sort order is by ascending value; the default children accessor assumes each input data is an object with a children array; the default size is 1×1.*/
+    .size([diameter - 4, diameter - 4])
+    .value(function(d) { return d.size; });
+
+var svg = d3.select("#graph").append("svg") //select div and append the svg*/
+    .attr("width", diameter) //width is set to diameter = 960*/
+    .attr("height", diameter) //height is set to diameter = 960*/
+  .append("g") /*g = anonymous variable indent alignment on purpose*/
+    .attr("transform", "translate(2,2)"); /*offset the graph with modify coordinate["x": 2 "y": 2] is now set as 0,0 in group g*/
+
+d3.json("test17.json", function(error, root) {
+  
+  var node = svg.datum(root).selectAll(".node")
+      .data(pack.nodes) //bind data to nodes
+    .enter().append("g") //indent alignment on purpose, g is an anonymous variable*/
+      .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+/*    var dimensions = ["size", "units"];
+
+    var index = 0;
+
+    setInterval(function(){
+
+    var dimension = dimensions[index++];
+    if (index >= dimensions.length) index = 0;
+    pack.value(function(d)){ return d[dimension]; });
+
+    node.data
+
+
+    }); */
+
+  node.append("title")
+    .text(function(d) { return d.name + (d.children ? "" : ": $" + format(d.size)); }); /*text popup upon mouseover*/
+
+  node.append("circle")
+      .attr("r", function(d) { return d.r; })
+      .on("mouseover", function (event) {
+
+        var photo = event.photo;
+        $("#photo").empty();
+        $("<img/>").attr("src", photo).appendTo("#photo"); 
+        
+
+        var name = event.name;
+        if (name === "Click on a circle for info") return;
+        if (name === "arthritis") return;
+        if (name === "asthma") return;
+        if (name === "cancer") return;
+        if (name === "psych") return;
+        if (name === "HIV") return;
+        if (name === "diabetes") return;
+
+        $("#drug-name").text(name);
+
+        var aka = event.aka;     
+        $("#aka").text(aka);
+
+        var treats = event.treats;
+        $("#treats").text(treats);
+        
+        var manufacturer = event.manufacturer;
+        $("#manufacturer").text(manufacturer);
+        
+        var sales = event.sales;
+        $("#sales").text(sales);
+
+        var info = event.info;
+        $(".leaf").hover(function(){
+          $("#info").show();    
+        })
+          $(".leaf").mouseleave(function(){
+          $("#info").hide();  
+          });
+
+      });
+
+  node.filter(function(d) { return !d.children; }).append("text")
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")
+      .text(function(d) { return d.name.substring(0, d.r / 3); });
+});
+
+d3.select(self.frameElement).style("height", diameter + "px");
+
+</script>
+
+<div id="info">
+  
+
+  <div>
+    <span id="photo"></span>
+  </div>
+  <div>
+    Drug name: <span id="drug-name"></span>
+  </div>
+  <div>
+    Generic name: <span id="aka"></span>
+  </div>
+  <div>
+    Treats: <span id="treats"></span>
+  </div>
+  <div>
+    Manufacturer: <span id="manufacturer"></span>
+  </div>
+  <div>
+    U.S. sales in 2012 Q4: $<span id="sales"></span>
+  </div>
+</div>
+</body>
+</html>
