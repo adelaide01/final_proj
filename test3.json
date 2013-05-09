@@ -1,0 +1,125 @@
+{
+  "name": "Click on a circle for info",
+  "children": [
+    {
+      "name": "arthritis",
+      "children": [
+        {"name":"Humira","aka":"adalimumab","treats":"rheumatoid arthritis, chronic plaque psoriasis, Crohn's disease","manufacturer":"Abbott Laboratories","sales":"1.2 bil","size":1206377},
+        {
+          "name":"Enbrel",
+          "aka":"etanercept",
+          "treats":"psoriatic arthritis, rheumatoid arthritis, plaque psoriasis",
+          "manufacturer":"Amgen, Inc.",
+          "sales":"1.1 bil",
+          "size":1088533
+        },      
+        {
+          "name":"Remicade",
+          "aka":"infliximab",
+          "treats":"rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn disease, plaque psoriasis, and ulcerative colitis",
+          "manufacturer":"Centocor Ortho Biotech, Inc.",     
+          "sales":"935 mil",
+          "size":935584
+        },
+        {
+          "name":"Rituxan",
+          "aka":"rituximab",
+          "treats":"rheumatoid arthritis, granulomatosis with polyangiitis, microscopic polyangiitis, also used in combination with other cancer medicines to treat non-Hodgkin's lymphoma",
+          "manufacturer":"Genentech, Inc.",
+          "sales":"779 mil",
+          "size":779026
+        },
+        {
+          "name":"Celebrex",
+          "aka":"celecoxib",
+          "treats":"arthritis (osteoarthritis, rheumatoid arthritis, or juvenile rheumatoid arthritis) in children and adults, ankylosing spondylitis, or menstrual cramps",
+          "manufacturer":"Pfizer, Inc.",
+          "sales":"506 mil",
+          "size":505850      
+        }
+      ]
+    },
+    {
+      "name": "asthma",
+      "children": [
+        {
+          "name":"Advair Diskus",
+          "aka":"fluticasone propionate",
+          "manufacturer":"GlaxoSmithKline",
+          "treats":"asthma, bronchitis, and chronic obstructive pulmonary disease",
+          "sales":"1.2 bil",
+          "size":1204874
+
+        },
+        {
+          "name":"Spiriva",
+          "aka":"tiotropium bromide",
+          "manufacturer":"Boehringer Ingelheim Pharmaceuticals, Inc.",
+          "treats":"chronic obstructive pulmonary disease",
+          "sales":"702 mil",
+          "size":702246
+          
+        }
+      ]
+    },
+    {
+      "name": "cancer",
+      "children": [
+        {
+          "name":"Neulasta",
+          "aka":"pegfilgrastim",
+          "treats":"growth of white blood cells, particularly for patients undergoing chemotherapy to prevent infections",
+          "manufacturer":"Amgen, Inc.",
+          "sales":"803 mil",
+          "size":803286
+
+        },
+        {
+          "name":"Avastin",
+          "aka":"bevacizumab",
+          "treats":"colon cancer, non–small cell lung cancer, other types of cancer",             
+          "manufacturer":"Genentech, Inc.",
+          "sales":"634 mil",
+          "size":634201
+
+      }
+    ]
+  },
+{
+      "name": "diabetes",
+      "children": [
+
+{"name":"Januvia","manufacturer":"Merck & Co., Inc.","size":658957,"sales":"659 mil","treats":"blood sugar levels for type 2 diabetics","aka":"sitagliptin phosphate"},
+{"name":"Lantus","manufacturer":"Sanofi-Aventis","size":599359,"sales":"559 mil","treats":"type 1 or 2 diabetics who need synthetic insulin, a hormone that helps get sugar from the blood to the muscles","aka":"insulin glargine"},
+{"name":"Lantus Solostar","manufacturer":"Sanofi-Aventis","size":597688,"sales":"597 mil","treats":"insulin under brand name Lantus packaged in a pen-shaped dispenser","aka":"insulin glargine"}
+]
+},
+
+{
+      "name": "HIV",
+      "children": [
+{"name":"Atripla","manufacturer":"Gilead Sciences, Inc.","size":695411,"sales":"695 mil","treats":"HIV using three antiretroviral drugs in one tablet","aka":"emtricitabine / tenofovir / efavirenz"},
+{"name":"Truvada","manufacturer":"Gilead Sciences, Inc.","size":565853,"sales":"566 mil","treats":"HIV using two antiretroviral drugs in one tablet","aka":"tenofovir/emtricitabine"}
+]
+},
+
+{     "name": "painkiller",
+      "children": [
+{"name":"OxyContin","manufacturer":"NA","size":668415,"sales":"668 mil","treats":"post-operative pain","aka":"oxycodone"},
+{"name":"Lyrica","manufacturer":"Pfizer Inc","size":511571,"sales":"512 mil","treats":"nerve and muscle pain caused by diabetes, shingles, fibromyalgia, or spinal cord injury","aka":"pregabalin"}
+]
+},
+
+{
+      "name": "psych",
+      "children": [
+{"name":"Abilify","manufacturer":"Otsuka Pharmaceutical Co.","size":1478301,"sales":"1.5 bil","treats":"schizophrenia, bipolar disorder, depression, autism","aka":"aripiprazole"},
+{"name":"Cymbalta","manufacturer":"Eli Lilly and Company","size":1227484,"sales":"1.2 bil","treats":"major depressive disorder, general anxiety disorder, fibromyalgia","aka":"duloxetine"}
+]
+}
+
+
+
+    
+  ]
+}
