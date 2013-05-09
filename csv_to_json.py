@@ -9,7 +9,7 @@ import json
 #from sys import argv
 
 def csv_to_json (csv):
-    f = open("god.csv", 'r')
+    f = open("data.csv", 'r')
     data = csv.reader(f)
     #TO DO: close file
 
@@ -17,7 +17,7 @@ def csv_to_json (csv):
     for row in data:
         # list comprehension
         row = [item.replace("^", ",") for item in row]
-        drug_type, company, drug_name, size, sales, treats, aka, units = row
+        drug_type, company, drug_name, size, sales, treats, aka, units_sold, photo, image_file = row
         
         if drug_type is None:
             # Then probably got to end of file.
@@ -29,7 +29,9 @@ def csv_to_json (csv):
             "name": drug_name,
             "size": int(size),
             "manufacturer": company,
-            "units_sold": int(units),
+            "units_sold": int(units_sold),
+            "photo": photo,
+            "image_file": image_file
         }
 
         if drug_type not in d:

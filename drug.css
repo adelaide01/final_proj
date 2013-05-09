@@ -1,0 +1,69 @@
+    body {
+      background-color: #3e6b85;  
+    }
+
+    #graph{
+
+    }
+
+    #key{
+
+    }
+
+    .title{
+    
+    }
+
+    .crop img { 
+      border-radius: 50%;
+      width: 177px;
+      height: 177px;
+      border: 2px solid #b8b8b8; 
+    }
+
+    .leaf circle {
+      fill: #ff8400; /*orange*/
+      fill-opacity: .60;
+    }
+
+    .leaf circle:hover {
+      fill-opacity: 1;
+      
+    }
+
+    .leaf text{
+      pointer-events: none;
+    }
+
+    circle {
+      fill: #63aad4; /*blue*/
+      fill-opacity: .15;
+      stroke: #b8b8b8;
+      stroke-diameter: 1px;
+    }
+    circle:hover {
+      fill-opacity: .01;
+      stroke: #ccccc0;
+      stroke-diameter: 2px;
+    }
+  
+    h1{
+      color: #ffffff;
+    }
+
+    text {
+    font: 10px sans-serif;
+    }
+
+    #info {
+
+      margin-top: 20px;
+      display: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    #info span {
+      font-weight: normal;
+      }
+

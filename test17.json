@@ -3,20 +3,74 @@
   "children": [
 
   {
-    "name": "asthma", 
+    "name": "stomach acid", 
     "children": [
       {
-        "name": "GlaxoSmithKline", 
+        "name": "AstraZeneca Pharmaceuticals", 
         "children": [
           {
-            "treats": "asthma, bronchitis, and chronic obstructive pulmonary disease", 
-            "name": "Advair Diskus", 
-            "sales": "1.2 bil", 
-            "aka": "fluticasone propionate", 
-            "size": 1204874, 
-            "units_sold": 5853, 
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "GlaxoSmithKline"
+            "image_file": "images/pill.jpg", 
+            "treats": "heartburn, gastroesophageal reflux", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "esomeprazole magnesium", 
+            "size": 1458964, 
+            "units_sold": 6667, 
+            "sales": "1.5 bil", 
+            "manufacturer": "AstraZeneca Pharmaceuticals", 
+            "name": "Nexium"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "respiratory", 
+    "children": [
+      {
+        "name": "AstraZeneca Pharmaceuticals", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "respiratory, bronchitis, and chronic obstructive pulmonary disease", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "budesonide and formoterol", 
+            "size": 376822, 
+            "units_sold": 2210, 
+            "sales": "377 mil", 
+            "manufacturer": "AstraZeneca Pharmaceuticals", 
+            "name": "Symbicort"
+          }
+        ]
+      }, 
+      {
+        "name": "MedImmune Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "lung infections caused by respiratory syncytial virus in babies and children", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "palivizumab", 
+            "size": 412703, 
+            "units_sold": 238, 
+            "sales": "413 mil", 
+            "manufacturer": "MedImmune Inc.", 
+            "name": "Synagis"
+          }
+        ]
+      }, 
+      {
+        "name": "Teva Pharmaceuticals", 
+        "children": [
+          {
+            "image_file": "images/proair.jpg", 
+            "treats": "respiratory, bronchitis and chronic obstructive pulmonary disease", 
+            "photo": "http://www.savalife.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/proair-hfa-inhaler.jpg", 
+            "aka": "salbutamol", 
+            "size": 262338, 
+            "units_sold": 6765, 
+            "sales": "262 mil", 
+            "manufacturer": "Teva Pharmaceuticals", 
+            "name": "ProAir HFA"
           }
         ]
       }, 
@@ -24,14 +78,69 @@
         "name": "Boehringer Ingelheim Pharmaceuticals Inc.", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "chronic obstructive pulmonary disease", 
-            "name": "Spiriva", 
-            "sales": "702 mil", 
-            "aka": "tiotropium bromide", 
-            "size": 702246, 
-            "units_sold": 3664,
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Boehringer Ingelheim Pharmaceuticals Inc."
+            "aka": "tiotropium bromide", 
+            "size": 726057, 
+            "units_sold": 3609, 
+            "sales": "726 mil", 
+            "manufacturer": "Boehringer Ingelheim Pharmaceuticals Inc.", 
+            "name": "Spiriva"
+          }, 
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "once-daily inhaled maintenance medicine for chronic obstructive pulmonary disease", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "tiotropium bromide", 
+            "size": 266777, 
+            "units_sold": 1765, 
+            "sales": "267 mil", 
+            "manufacturer": "Boehringer Ingelheim Pharmaceuticals Inc.", 
+            "name": "Combivent"
+          }
+        ]
+      }, 
+      {
+        "name": "generic", 
+        "children": [
+          {
+            "image_file": "images/budesonide.jpg", 
+            "treats": "asthma and non-infectious rhinitis (including hay fever and other allergies)", 
+            "photo": "http://www.pharmacy-network.com/images/products/budesonide.jpg", 
+            "aka": "budesonide", 
+            "size": 271635, 
+            "units_sold": 12470, 
+            "sales": "272 mil", 
+            "manufacturer": "generic", 
+            "name": "budesonide"
+          }
+        ]
+      }, 
+      {
+        "name": "GlaxoSmithKline", 
+        "children": [
+          {
+            "image_file": "images/advairdiskus.jpg", 
+            "treats": "respiratory, bronchitis, and chronic obstructive pulmonary disease", 
+            "photo": "http://pillatlas.com/Images/PillAtlas/C1010249wtmk.jpg", 
+            "aka": "fluticasone propionate", 
+            "size": 1277171, 
+            "units_sold": 5959, 
+            "sales": "1.3 bil", 
+            "manufacturer": "GlaxoSmithKline", 
+            "name": "Advair Diskus"
+          }, 
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "asthma for ages four and older; not for sudden symptoms", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "fluticasone propionate", 
+            "size": 266820, 
+            "units_sold": 1907, 
+            "sales": "267 mil", 
+            "manufacturer": "GlaxoSmithKline", 
+            "name": "Flovent HFA"
           }
         ]
       }
@@ -44,24 +153,26 @@
         "name": "Gilead Sciences Inc.", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "HIV using three antiretroviral drugs in one tablet", 
-            "name": "Atripla", 
-            "sales": "695 mil", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
             "aka": "emtricitabine / tenofovir / efavirenz", 
-            "size": 695411, 
-            "units_sold": 483, 
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Gilead Sciences Inc."
+            "size": 723408, 
+            "units_sold": 479, 
+            "sales": "723 mil", 
+            "manufacturer": "Gilead Sciences Inc.", 
+            "name": "Atripla"
           }, 
           {
+            "image_file": "images/pill.jpg", 
             "treats": "HIV using two antiretroviral drugs in one tablet", 
-            "name": "Truvada", 
-            "sales": "566 mil", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
             "aka": "tenofovir/emtricitabine", 
-            "size": 565853, 
-            "units_sold": 599,
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Gilead Sciences Inc."
+            "size": 536928, 
+            "units_sold": 548, 
+            "sales": "537 mil", 
+            "manufacturer": "Gilead Sciences Inc.", 
+            "name": "Truvada"
           }
         ]
       }
@@ -74,14 +185,31 @@
         "name": "Amgen Inc.", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "growth of white blood cells, particularly for patients undergoing chemotherapy to prevent infections", 
-            "name": "Neulasta", 
-            "sales": "803 mil", 
-            "aka": "pegfilgrastim", 
-            "size": 803286, 
-            "units_sold": 316,
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Amgen Inc."
+            "aka": "pegfilgrastim", 
+            "size": 859062, 
+            "units_sold": 329, 
+            "sales": "859 mil", 
+            "manufacturer": "Amgen Inc.", 
+            "name": "Neulasta"
+          }
+        ]
+      }, 
+      {
+        "name": "Eli Lilly and Company", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "chemotherapy drug for patients with cancer in or near the lungs", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "insulin aspart", 
+            "size": 273747, 
+            "units_sold": 179, 
+            "sales": "274 mil", 
+            "manufacturer": "Eli Lilly and Company", 
+            "name": "Alimta"
           }
         ]
       }, 
@@ -89,14 +217,42 @@
         "name": "Genentech Inc.", 
         "children": [
           {
-            "treats": "colon cancer, non small cell lung cancer, and other types of cancer", 
-            "name": "Avastin", 
-            "sales": "634 mil", 
+            "image_file": "images/pill.jpg", 
+            "treats": "colon cancer, non\u2013small cell lung cancer, and other types of cancer", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
             "aka": "bevacizumab", 
-            "size": 634201, 
-            "units_sold": 462,
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Genentech Inc."
+            "size": 640823, 
+            "units_sold": 462, 
+            "sales": "641 mil", 
+            "manufacturer": "Genentech Inc.", 
+            "name": "Avastin"
+          }, 
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "breast cancer", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "trastuzumab", 
+            "size": 471387, 
+            "units_sold": 167, 
+            "sales": "471 mil", 
+            "manufacturer": "Genentech Inc.", 
+            "name": "Herceptin"
+          }
+        ]
+      }, 
+      {
+        "name": "Novartis Corporation", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "a type of blood cancer called chronic myeloid leukemia", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "imatinib", 
+            "size": 438105, 
+            "units_sold": 82, 
+            "sales": "438 mil", 
+            "manufacturer": "Novartis Corporation", 
+            "name": "Gleevec"
           }
         ]
       }
@@ -109,14 +265,36 @@
         "name": "Novartis Corporation", 
         "children": [
           {
+            "image_file": "images/diovan.jpg", 
             "treats": "abnormally high blood pressure (hypertension)", 
-            "name": "Diovan", 
-            "sales": "475 mil", 
+            "photo": "http://pillatlas.com/Images/PillAtlas/C1040008wtmk.jpg", 
             "aka": "valsartan", 
-            "size": 474603, 
-            "units_sold": 1890,
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Novartis Corporation"
+            "size": 538141, 
+            "units_sold": 1923, 
+            "sales": "538 mil", 
+            "manufacturer": "Novartis Corporation", 
+            "name": "Diovan"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "allergies", 
+    "children": [
+      {
+        "name": "Merck & Co. Inc.", 
+        "children": [
+          {
+            "image_file": "", 
+            "treats": "nasal allergies such as congestion, sneezing and runny nose", 
+            "photo": "http://allergy.peds.arizona.edu/southwest/devices/inhalers-nasal/images/nasone2.gif", 
+            "aka": "mometasone", 
+            "size": 283875, 
+            "units_sold": 2655, 
+            "sales": "284 mil", 
+            "manufacturer": "Merck & Co. Inc.", 
+            "name": "nasonex"
           }
         ]
       }
@@ -129,14 +307,15 @@
         "name": "Abbott Laboratories", 
         "children": [
           {
-            "treats": "rheumatoid arthritis, chronic plaque psoriasis, Crohn\\\u2019s disease", 
-            "name": "Humira", 
-            "sales": "1.2 bil", 
+            "image_file": "images/pill.jpg", 
+            "treats": "rheumatoid arthritis, chronic plaque psoriasis, Crohn\u2019s disease", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
             "aka": "adalimumab", 
-            "size": 1206377, 
-            "units_sold": 669, 
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Abbott Laboratories"
+            "size": 1217353, 
+            "units_sold": 631, 
+            "sales": "1.2 bil", 
+            "manufacturer": "Abbott Laboratories", 
+            "name": "Humira"
           }
         ]
       }, 
@@ -144,29 +323,15 @@
         "name": "Amgen Inc.", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "psoriatic arthritis, rheumatoid arthritis, plaque psoriasis", 
-            "name": "Enbrel", 
-            "sales": "1.1 bil", 
-            "aka": "etanercept", 
-            "size": 1088533, 
-            "units_sold": 1040,
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Amgen Inc."
-          }
-        ]
-      }, 
-      {
-        "name": "Pfizer Inc", 
-        "children": [
-          {
-            "treats": "arthritis (osteoarthritis, rheumatoid arthritis, or juvenile rheumatoid arthritis) in children and adults, ankylosing spondylitis, or menstrual cramps", 
-            "name": "Celebrex", 
-            "sales": "506 mil", 
-            "aka": "celecoxib", 
-            "size": 505850, 
-            "units_sold": 1061,
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Pfizer Inc"
+            "aka": "etanercept", 
+            "size": 1075249, 
+            "units_sold": 969, 
+            "sales": "1.1 bil", 
+            "manufacturer": "Amgen Inc.", 
+            "name": "Enbrel"
           }
         ]
       }, 
@@ -174,14 +339,31 @@
         "name": "Centocor Ortho Biotech Inc.", 
         "children": [
           {
-            "treats": "rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn disease, plaque psoriasis, and ulcerative colitis", 
-            "name": "Remicade", 
-            "sales": "935 mil", 
-            "aka": "infliximab", 
-            "size": 935584, 
-            "units_sold": 1551,
+            "image_file": "images/pill.jpg", 
+            "treats": "rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn\u2019s disease, plaque psoriasis, and ulcerative colitis", 
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Centocor Ortho Biotech Inc."
+            "aka": "infliximab", 
+            "size": 969058, 
+            "units_sold": 1590, 
+            "sales": "969 mil", 
+            "manufacturer": "Centocor Ortho Biotech Inc.", 
+            "name": "Remicade"
+          }
+        ]
+      }, 
+      {
+        "name": "Pfizer Inc.", 
+        "children": [
+          {
+            "image_file": "images/celebrex.jpg", 
+            "treats": "arthritis (osteoarthritis, rheumatoid arthritis, or juvenile rheumatoid arthritis) in children and adults, ankylosing spondylitis, or menstrual cramps", 
+            "photo": "http://pillatlas.com/Images/PillAtlas/C1010345wtmk.jpg", 
+            "aka": "celecoxib", 
+            "size": 518329, 
+            "units_sold": 1009, 
+            "sales": "518 mil", 
+            "manufacturer": "Pfizer Inc.", 
+            "name": "Celebrex"
           }
         ]
       }, 
@@ -189,14 +371,221 @@
         "name": "Genentech Inc.", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "rheumatoid arthritis, granulomatosis with polyangiitis, microscopic polyangiitis, also used in combination with other cancer medicines to treat non-Hodgkin\\\u2019s lymphoma", 
-            "name": "Rituxan", 
-            "sales": "779 mil", 
-            "aka": "rituximab", 
-            "size": 779026, 
-            "units_sold": 550,
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Genentech Inc."
+            "aka": "rituximab", 
+            "size": 794464, 
+            "units_sold": 560, 
+            "sales": "794 mil", 
+            "manufacturer": "Genentech Inc.", 
+            "name": "Rituxan"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "fat", 
+    "children": [
+      {
+        "name": "GlaxoSmithKline", 
+        "children": [
+          {
+            "image_file": "images/lovaza.jpg", 
+            "treats": "high blood levels of triglycerides, the most abundant fatty molecule", 
+            "photo": "https://healthy.kaiserpermanente.org/static/drugency/images/REL04241.JPG", 
+            "aka": "omega-3-acid ethyl esters", 
+            "size": 267926, 
+            "units_sold": 1570, 
+            "sales": "268 mil", 
+            "manufacturer": "GlaxoSmithKline", 
+            "name": "Lovaza"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "ADD", 
+    "children": [
+      {
+        "name": "generic", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "psychostimulant used to treat ADHD and narcolepsy (sudden attacks of uncontrollable sleepiness)", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "ritalin", 
+            "size": 383354, 
+            "units_sold": 826, 
+            "sales": "383 mil", 
+            "manufacturer": "generic", 
+            "name": "methylphenidate"
+          }, 
+          {
+            "image_file": "images/dextro.jpg", 
+            "treats": "psychostimulant used to treat ADHD and narcolepsy (sudden attacks of uncontrollable sleepiness)", 
+            "photo": "https://healthy.kaiserpermanente.org/static/drugency/images/ABT01400.JPG", 
+            "aka": "amphetamine/dextroamphetamine", 
+            "size": 265628, 
+            "units_sold": 764, 
+            "sales": "266 mil", 
+            "manufacturer": "generic", 
+            "name": "dextroamphetamine"
+          }
+        ]
+      }, 
+      {
+        "name": "Shire US Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "psychostimulant used to treat ADHD in adults", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "lisdexamfetamine", 
+            "size": 430909, 
+            "units_sold": 814, 
+            "sales": "430 mil", 
+            "manufacturer": "Shire US Inc.", 
+            "name": "Vyvanse"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "hepatitis", 
+    "children": [
+      {
+        "name": "Vertex Pharmaceuticals", 
+        "children": [
+          {
+            "image_file": "images/incivek.jpg", 
+            "treats": "Hepatitis C as an antiviral medicine", 
+            "photo": "http://www.cvs.com/webcontent/images/drug/DrugItem_14359.JPG", 
+            "aka": "telaprevir", 
+            "size": 234084, 
+            "units_sold": 14, 
+            "sales": "234 mil", 
+            "manufacturer": "Vertex Pharmaceuticals", 
+            "name": "Incivek"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Alzheimer\u2019s", 
+    "children": [
+      {
+        "name": "Forest Pharmaceuticals Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "dementia associated with Alzheimer\\\u2019s disease", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "memantine", 
+            "size": 448659, 
+            "units_sold": 2011, 
+            "sales": "449 mil", 
+            "manufacturer": "Forest Pharmaceuticals Inc.", 
+            "name": "Namenda"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "testosterone", 
+    "children": [
+      {
+        "name": "Abbott Laboratories", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "low Testosterone which can lead to hypogonadism (symptoms fatigue  decreased energy  reduced sexual desire  and depressed mood)", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "testosterone ge", 
+            "size": 348205, 
+            "units_sold": 1687, 
+            "sales": "348 mil", 
+            "manufacturer": "Abbott Laboratories", 
+            "name": "AndroGel"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "psych", 
+    "children": [
+      {
+        "name": "Otsuka Pharmaceutical Co.", 
+        "children": [
+          {
+            "image_file": "images/abilify.jpg", 
+            "treats": "schizophrenia, bipolar disorder, depression, autism", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "aripiprazole", 
+            "size": 1526228, 
+            "units_sold": 2477, 
+            "sales": "1.5 bil", 
+            "manufacturer": "Otsuka Pharmaceutical Co.", 
+            "name": "Abilify"
+          }
+        ]
+      }, 
+      {
+        "name": "AstraZeneca Pharmaceuticals", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "acute depressive episodes in bipolar disorder and schizophrenia", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "quetiapine fumarate", 
+            "size": 304400, 
+            "units_sold": 406, 
+            "sales": "304 mil", 
+            "manufacturer": "AstraZeneca Pharmaceuticals", 
+            "name": "Seroquel XR"
+          }
+        ]
+      }, 
+      {
+        "name": "Eli Lilly and Company", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "major depressive disorder, general anxiety disorder, fibromyalgia", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "duloxetine", 
+            "size": 1296843, 
+            "units_sold": 6502, 
+            "sales": "1.3 bil", 
+            "manufacturer": "Eli Lilly and Company", 
+            "name": "Cymbalta"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "erectile dysfunction", 
+    "children": [
+      {
+        "name": "Pfizer Inc", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "erectile dysfunction pulmonary arterial hypertension", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "sildenafil citrate", 
+            "size": 288880, 
+            "units_sold": 442, 
+            "sales": "289 mil", 
+            "manufacturer": "Pfizer Inc", 
+            "name": "Viagra"
           }
         ]
       }
@@ -206,17 +595,251 @@
     "name": "cholesterol", 
     "children": [
       {
+        "name": "Abbott Laboratories", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "high cholesterol in blood; a component is of the vitamin B complex", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "niacin", 
+            "size": 281011, 
+            "units_sold": 902, 
+            "sales": "281 mil", 
+            "manufacturer": "Abbott Laboratories", 
+            "name": "Niaspan"
+          }
+        ]
+      }, 
+      {
         "name": "AstraZeneca Pharmaceuticals", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "lowers high levels of cholesterol and fats", 
-            "name": "Crestor", 
-            "sales": "1.3 bil", 
-            "aka": "rosuvastatin", 
-            "size": 1275483, 
-            "units_sold": 4230,
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "AstraZeneca Pharmaceuticals"
+            "aka": "rosuvastatin", 
+            "size": 1295760, 
+            "units_sold": 4106, 
+            "sales": "1.3 bil", 
+            "manufacturer": "AstraZeneca Pharmaceuticals", 
+            "name": "Crestor"
+          }
+        ]
+      }, 
+      {
+        "name": "Merck & Co. Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "high cholesterol in blood (a cholesterol absorption inhibitor)", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "ezetimibe", 
+            "size": 395066, 
+            "units_sold": 1995, 
+            "sales": "395 mil", 
+            "manufacturer": "Merck & Co. Inc.", 
+            "name": "Zetia"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "pain relief", 
+    "children": [
+      {
+        "name": "Pfizer Inc", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "nerve and muscle pain caused by diabetes, shingles, fibromyalgia, or spinal cord injury", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "pregabalin", 
+            "size": 553016, 
+            "units_sold": 2074, 
+            "sales": "553 mil", 
+            "manufacturer": "Pfizer Inc", 
+            "name": "Lyrica"
+          }
+        ]
+      }, 
+      {
+        "name": "generic", 
+        "children": [
+          {
+            "image_file": "images/hydrocodone.jpg", 
+            "treats": "moderate to severe pain and as an antitussive to treat cough", 
+            "photo": "https://healthy.kaiserpermanente.org/static/drugency/images/MKR03670.JPG", 
+            "aka": "epoetin alfa", 
+            "size": 251964, 
+            "units_sold": 10024, 
+            "sales": "252 mil", 
+            "manufacturer": "generic", 
+            "name": "hydrocodone"
+          }
+        ]
+      }, 
+      {
+        "name": "Endo Pharmaceuticals", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "nerve pain using a medicated adhesive patch", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "lidoderm patch 5%", 
+            "size": 345620, 
+            "units_sold": 1650, 
+            "sales": "346 mil", 
+            "manufacturer": "Endo Pharmaceuticals", 
+            "name": "Lidoderm"
+          }
+        ]
+      }, 
+      {
+        "name": "Purdue Pharma", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "pain relief", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "oxycodone", 
+            "size": 652536, 
+            "units_sold": 1176, 
+            "sales": "653 mil", 
+            "manufacturer": "Purdue Pharma", 
+            "name": "OxyContin"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "sleep", 
+    "children": [
+      {
+        "name": "generic", 
+        "children": [
+          {
+            "image_file": "images/modafinil.jpg", 
+            "treats": "narcolepsy, shift work sleep disorder and excessive daytime sleepiness associated with obstructive sleep apnea", 
+            "photo": "https://healthy.kaiserpermanente.org/static/drugency/images/CPH02000.JPG", 
+            "aka": "modafinil", 
+            "size": 218612, 
+            "units_sold": 371, 
+            "sales": "219 mil", 
+            "manufacturer": "generic", 
+            "name": "modafinil"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "addiction", 
+    "children": [
+      {
+        "name": "Reckitt Benckiser Pharmaceuticals Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "aids in recovery from opiate addiction", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "buprenorphine and naloxone", 
+            "size": 415929, 
+            "units_sold": 2066, 
+            "sales": "416 mil", 
+            "manufacturer": "Reckitt Benckiser Pharmaceuticals Inc.", 
+            "name": "Suboxone"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "multiple sclerosis", 
+    "children": [
+      {
+        "name": "Teva Pharmaceuticals", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "relapsing-remitting multiple sclerosis", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "glatiramer acetate", 
+            "size": 926021, 
+            "units_sold": 229, 
+            "sales": "926 mil", 
+            "manufacturer": "Teva Pharmaceuticals", 
+            "name": "Copaxone"
+          }
+        ]
+      }, 
+      {
+        "name": "EMD Serono", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "relapsing-remitting multiple sclerosis", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "interferon beta-1a", 
+            "size": 332452, 
+            "units_sold": 562, 
+            "sales": "332 mil", 
+            "manufacturer": "EMD Serono", 
+            "name": "Rebif"
+          }
+        ]
+      }, 
+      {
+        "name": "Biogen Idec", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "relapsing-remitting multiple sclerosis", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "Interferon beta-1a", 
+            "size": 338236, 
+            "units_sold": 97, 
+            "sales": "338 mil", 
+            "manufacturer": "Biogen Idec", 
+            "name": "Avonex"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "kidney", 
+    "children": [
+      {
+        "name": "Amgen Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "anemia caused by chronic kidney disease in patients on dialysis", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "epoetin alfa", 
+            "size": 503493, 
+            "units_sold": 590, 
+            "sales": "503 mil", 
+            "manufacturer": "Amgen Inc.", 
+            "name": "Epogen"
+          }
+        ]
+      }, 
+      {
+        "name": "Janssen Pharmaceuticals Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "anemia in patients with kidney failure  HIV  or cancer", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "epoetin alfa", 
+            "size": 241175, 
+            "units_sold": 270, 
+            "sales": "241 mil", 
+            "manufacturer": "Janssen Pharmaceuticals Inc.", 
+            "name": "Procrit"
           }
         ]
       }
@@ -226,17 +849,88 @@
     "name": "diabetes", 
     "children": [
       {
+        "name": "Novo Nordisk Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "synthetic insulin for type 1 diabetics", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "insulin aspart", 
+            "size": 322779, 
+            "units_sold": 3040, 
+            "sales": "323 mil", 
+            "manufacturer": "Novo Nordisk Inc.", 
+            "name": "Novolog"
+          }, 
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "synthetic insulin for diabetics", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "insulin detemir", 
+            "size": 335926, 
+            "units_sold": 3348, 
+            "sales": "336 mil", 
+            "manufacturer": "Novo Nordisk Inc.", 
+            "name": "Levemir"
+          }, 
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "synthetic insulin for type 1 diabetics", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "insulin aspart", 
+            "size": 316981, 
+            "units_sold": 2979, 
+            "sales": "317 mil", 
+            "manufacturer": "Novo Nordisk Inc.", 
+            "name": "NovoLog FlexPen"
+          }
+        ]
+      }, 
+      {
+        "name": "LifeScan Inc.", 
+        "children": [
+          {
+            "image_file": "images/pill.jpg", 
+            "treats": "blood glucose test strips for diabetics", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
+            "aka": "device  not an actual drug", 
+            "size": 368604, 
+            "units_sold": 6110, 
+            "sales": "368 mil", 
+            "manufacturer": "LifeScan Inc.", 
+            "name": "One Touch Ultra"
+          }
+        ]
+      }, 
+      {
+        "name": "Eli Lilly and Company", 
+        "children": [
+          {
+            "image_file": "images/humalog.jpg", 
+            "treats": "insulin under brand name Humalog packaged in a pen-shaped dispenser", 
+            "photo": "http://www.focuspharmacy.com/images/Insulin/3HumalogKwikPens_sm.jpg", 
+            "aka": "insulin lispro", 
+            "size": 201646, 
+            "units_sold": 1137, 
+            "sales": "202 mil", 
+            "manufacturer": "Eli Lilly and Company", 
+            "name": "Humalog Kwikpen"
+          }
+        ]
+      }, 
+      {
         "name": "Merck & Co. Inc.", 
         "children": [
           {
+            "image_file": "images/pill.jpg", 
             "treats": "synthetic insulin for diabetics", 
-            "name": "Januvia", 
-            "sales": "659 mil", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
             "aka": "sitagliptin phosphate", 
-            "size": 658957, 
-            "units_sold": 2369,
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Merck & Co. Inc."
+            "size": 701126, 
+            "units_sold": 2378, 
+            "sales": "701 mil", 
+            "manufacturer": "Merck & Co. Inc.", 
+            "name": "Januvia"
           }
         ]
       }, 
@@ -244,24 +938,26 @@
         "name": "Sanofi-Aventis", 
         "children": [
           {
-            "treats": "insulin aspart", 
-            "name": "Lantus", 
-            "sales": "559 mil", 
-            "aka": "insulin glargine", 
-            "size": 599359, 
-            "units_sold": 3500,
+            "image_file": "images/pill.jpg", 
+            "treats": "synthetic insulin for diabetics", 
             "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
-            "manufacturer": "Sanofi-Aventis"
+            "aka": "insulin glargine", 
+            "size": 592333, 
+            "units_sold": 5790, 
+            "sales": "592 mil", 
+            "manufacturer": "Sanofi-Aventis", 
+            "name": "Lantus"
           }, 
           {
+            "image_file": "images/pill.jpg", 
             "treats": "insulin under brand name Lantus packaged in a pen-shaped dispenser", 
-            "name": "Lantus Solostar", 
-            "sales": "597 mil", 
+            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg", 
             "aka": "insulin glargine", 
-            "size": 600000, 
-            "units_sold": 4668,
-            "photo": "http://www.pillatlas.com/Images/PillAtlas/C1030117wtmk.jpg",
-            "manufacturer": "Sanofi-Aventis"
+            "size": 637157, 
+            "units_sold": 4928, 
+            "sales": "637 mil", 
+            "manufacturer": "Sanofi-Aventis", 
+            "name": "Lantus Solostar"
           }
         ]
       }
