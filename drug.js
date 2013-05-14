@@ -102,7 +102,6 @@ d3.json("test17.json", function(json){
 
   
   // Transition to new value from sales to units.
-
   $("#units_btn").click(function(e) {               
 
     pack.value(function(d) {
@@ -111,7 +110,6 @@ d3.json("test17.json", function(json){
 
     node.data([json]).selectAll("g")
       .data(pack.nodes)
-
    
     node.transition()
       .duration(2000)
@@ -119,27 +117,22 @@ d3.json("test17.json", function(json){
         return "translate(" + d.x + "," + d.y + ")"; 
       });
 
-    //node.exit().remove().selectAll("g").attr("r", 0);
-
-    d3.selectAll("circle")
-      .transition()
-      .style("fill","#F1EFD7")
-      .style("stroke","63aad4")
-      .style("stroke-width", 2)
-      .duration(2000)  
-      .attr("r", function(d) { return d.r });  
-
+    node.each(function(nodeData) {
+      d3.select(this)
+        .selectAll("circle")
+        .data([nodeData])
+        .transition()
+        .duration(2000)
+        .attr("r", function(d) {return nodeData.r;});
+});
     text_labels.text(function(d) { return d.name });  
 
-    // TODO: new titles not appearing
-    /*node.text(function(d) { return d.name + (d.children ? "" : ": " + format(d.units_sold)); });*/
+});
 
-  });
-
-/*  $("#sales_btn").click(function (e) {
+  $("#sales_btn").click(function(e) {
     pack.value(function(d) {
       return d.size;
-    });*/
+    });
 
     node.data([json]).selectAll("g")
       .data(pack.nodes)
@@ -149,7 +142,21 @@ d3.json("test17.json", function(json){
       .attr("transform", function(d) { 
         return "translate(" + d.x + "," + d.y + ")"; 
       });
-  });
+    node.each(function(nodeData) {
+      d3.select(this)
+        .selectAll("circle")
+        .data([nodeData])
+        .transition()
+        .duration(2000)
+        .attr("r", function(d) {return nodeData.r;});
+});
+    text_labels.text(function(d) { return d.name });  
+
+});    
+
+
+});
+    
     
 
 
