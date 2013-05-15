@@ -1,6 +1,6 @@
 var radius = 700,
-    x = d3.scale.linear().range([0,radius]),
-    y = d3.scale.linear().range([0,radius]),
+    //x = d3.scale.linear().range([0,radius]),
+    //y = d3.scale.linear().range([0,radius]),
     format = d3.format(",d");
 
 
@@ -28,10 +28,13 @@ d3.json("test17.json", function(json){
 
 
   node.append("circle")
-        .attr("r", function(d) { return d.r; });
+      .style("fill","#FF8400")
+      .style("stroke","63aad4")
+      .style("stroke-width", 2)
+      .attr("r", function(d) { return d.r; });
 
   node.append("title")
-    .text(function(d) { return d.name + (d.parent ? "" : ": $" + format(d.size)); }); /*text popup upon mouseover*/
+    .text(function(d) { return d.name + (d.children ? "" :  ": $" + format(d.size)); }); /*text popup upon mouseover*/
 
 
   node.on("click", function (event) {
@@ -42,26 +45,87 @@ d3.json("test17.json", function(json){
         
 
         var name = event.name;
-        if (name === "Click on a circle for info") return;
-        if (name === "arthritis") return;
-        if (name === "asthma") return;
-        if (name === "cancer") return;
-        if (name === "kidney") return;
-        if (name === "cholestrol") return;
-        if (name === "psych") return;
-        if (name === "HIV") return;
-        if (name === "diabetes") return;
-        if (name === "pain relief") return;
-        if (name === "respiratory") return;
-        if (name === "ADD") return;
-        if (name === "multiple sclerosis") return;
-        if (name === "generic") return;
-        if (name === "Boehringer Ingelheim Pharmaceuticals Inc.") return;
-        if (name === "GlaxoSmithKline") return;
-        if (name === "Genentech Inc.") return;
-        if (name === "Sanofi-Aventis") return;
-        if (name === "Gilead Sciences Inc.") return;
-        if (name === "Novo Nordisk Inc.") return;
+        if (name === "Click on a circle for info") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "arthritis") {
+          $("#info").hide();
+          return;
+        }
+
+        if (name === "asthma") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "cancer") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "kidney") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "cholesterol") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "psych") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "HIV") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "diabetes") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "pain relief") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "respiratory") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "ADD") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "multiple sclerosis") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "generic") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "Boehringer Ingelheim Pharmaceuticals Inc.") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "GlaxoSmithKline") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "Genentech Inc.") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "Sanofi-Aventis") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "Gilead Sciences Inc.") {
+          $("#info").hide();
+          return;
+        }
+        if (name === "Novo Nordisk Inc.") {
+          $("#info").hide();
+          return;
+        }
 
         
         $("#drug-name").text(name);
@@ -84,7 +148,7 @@ d3.json("test17.json", function(json){
         var info = event.info;
         $("#info").show();
 
-/*        $(".leaf").hover(function(){
+        /*  $(".leaf").hover(function(){
           $("#info").show();    
         })
           $(".leaf").mouseleave(function(){
@@ -97,7 +161,8 @@ d3.json("test17.json", function(json){
 
   var text_labels=node.filter(function(d) { return !d.children; }).append("text")
   text_labels.attr("text-anchor", "middle")
-      .attr("dy", ".3em")    
+      .attr("dy", ".3em")
+      .style("opacity", function(d) { return d.r > 19.5 ? 1 : 0; })
       .text(function(d) { return d.name });
 
   
@@ -122,12 +187,18 @@ d3.json("test17.json", function(json){
         .selectAll("circle")
         .data([nodeData])
         .transition()
+        .style("fill","#f1efd7")
+        .style("stroke","63aad4")
+        .style("stroke-width", 2)
         .duration(2000)
         .attr("r", function(d) {return nodeData.r;});
 });
-    text_labels.text(function(d) { return d.name });  
+    text_labels.transition().duration(2000).style("opacity", function(d) { return d.r > 20 ? 1 : 0; })
+
 
 });
+
+
 
   $("#sales_btn").click(function(e) {
     pack.value(function(d) {
@@ -147,16 +218,16 @@ d3.json("test17.json", function(json){
         .selectAll("circle")
         .data([nodeData])
         .transition()
+        .style("fill","#ff8400")
         .duration(2000)
         .attr("r", function(d) {return nodeData.r;});
 });
-    text_labels.text(function(d) { return d.name });  
+    text_labels.transition().duration(2000).style("opacity", function(d) { return d.r > 20 ? 1 : 0; })    
 
 });    
 
 
 });
-    
     
 
 

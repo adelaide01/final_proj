@@ -22,8 +22,7 @@
     }
 
     .leaf circle {
-      fill: #ff8400; /*orange*/
-      fill-opacity: .60;
+      fill-opacity: .50;
     }
 
     .leaf circle:hover {
@@ -36,15 +35,10 @@
     }
 
     circle {
-      fill: #63aad4; /*blue*/
       fill-opacity: .15;
-      stroke: #b8b8b8;
-      stroke-diameter: 1px;
     }
     circle:hover {
       fill-opacity: .01;
-      stroke: #ccccc0;
-      stroke-diameter: 2px;
     }
   
     h1{
@@ -53,6 +47,10 @@
 
     text {
     font: 10px sans-serif;
+    }
+
+    .menu {
+      margin-left: 70px;
     }
 
     #info {

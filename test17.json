@@ -427,12 +427,12 @@
             "image_file": "images/dextro.jpg", 
             "treats": "psychostimulant used to treat ADHD and narcolepsy (sudden attacks of uncontrollable sleepiness)", 
             "photo": "https://healthy.kaiserpermanente.org/static/drugency/images/ABT01400.JPG", 
-            "aka": "amphetamine/dextroamphetamine", 
+            "aka": "dextroamphetamine", 
             "size": 265628, 
             "units_sold": 764, 
             "sales": "266 mil", 
             "manufacturer": "generic", 
-            "name": "amphetamine/dextroamphetamine"
+            "name": "dextroamphetamine"
           }
         ]
       }, 

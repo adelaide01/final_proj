@@ -7,79 +7,6 @@
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootswatch/2.3.1/spacelab/bootstrap.min.css">
 
 
-    <style>
-
-    body {
-      background-color: #3e6b85;  
-    }
-
-    #graph{
-
-    }
-
-    #key{
-
-    }
-
-    .title{
-    
-    }
-
-    .crop img { 
-      border-radius: 50%;
-      width: 177px;
-      height: 177px;
-      border: 2px solid #b8b8b8; 
-    }
-
-    .leaf circle {
-      fill: #ff8400; /*orange*/
-      fill-opacity: .60;
-    }
-
-    .leaf circle:hover {
-      fill-opacity: 1;
-      
-    }
-
-    .leaf text{
-      pointer-events: none;
-    }
-
-    circle {
-      fill: #63aad4; /*blue*/
-      fill-opacity: .15;
-      stroke: #b8b8b8;
-      stroke-diameter: 1px;
-    }
-    circle:hover {
-      fill-opacity: .01;
-      stroke: #ccccc0;
-      stroke-diameter: 2px;
-    }
-  
-    h1{
-      color: #ffffff;
-    }
-
-    text {
-    font: 10px sans-serif;
-    }
-
-    #info {
-
-      margin-top: 20px;
-      display: none;
-      color: #ffffff;
-      font-weight: bold;
-    }
-
-    #info span {
-      font-weight: normal;
-      }
-
-    </style>
-
     <title>test circle</title>
     <script type="text/javascript" src="d3.v3.js"></script>
     <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
@@ -94,20 +21,17 @@
   <body>
 
   <div class="container">
-    <h1>Top Selling Pharmaceutical Drugs</h1>
-    <div class="row">
-      <div id="buttons" class="span9">
-        <button id="units_btn" class="btn">Units sold 2013 Q1</button>
-        <button id="sales_btn" class="btn btn-warning">Sales in $000 $</button>
-      </div>
-    </div>
-    <div class="row">
+    <h1>Top Selling Pharmaceutical Drugs
     
+    <select class="menu show-tick" data-container="container" multiple="multiple" style="height: 55px; width: 192px;">
+      <option id="sales_btn" selected="selected">by sales ($000s)</option>
+      <option id="units_btn">by packages sold (000s)</option>
+    </select>    
+  </h1>
+
+    <div class="row">
       <div id="graph" class="span9 main">        
-      </div>
-    
-      <img src="key.png" alt="key for visualization" width="180" height="180" />
-      
+      </div>    
 
       <div id="info" class="span3 sidebar">
         <div class="crop">
@@ -131,10 +55,10 @@
         </div>
         <br/>
         <div>
-        U.S. sales 2012 Q4: $<span id="sales"></span>
+        U.S. sales 2013 Q1: $<span id="sales"></span>
         </div>
         <div>
-        Packages sold (units): <span id="units_sold"></span>
+        Packages sold (in 000s): <span id="units_sold"></span>
         </div>
 
         </div>
