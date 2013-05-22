@@ -57,8 +57,4 @@ def csv_to_json (csv):
     jsonf.close() #closes newly written json file
 
 
-<<<<<<< HEAD
 print csv_to_json(csv)
-=======
-print csv_to_json(csv)
->>>>>>> 4570683b5adab1ca714cb5183b86f3e402714305
