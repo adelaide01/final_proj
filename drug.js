@@ -34,7 +34,7 @@ d3.json("test17.json", function(json){
       .attr("r", function(d) { return d.r; });
 
   node.append("title")
-    .text(function(d) { return d.name + (d.children ? "" :  ": $" + format(d.size)); }); /*text popup upon mouseover*/
+    .text(function(d) { return d.name }); /*text popup upon mouseover*/
 
 
   node.on("click", function (event) {
@@ -43,89 +43,43 @@ d3.json("test17.json", function(json){
         $("#photo").empty();
         $("<img/>").attr("src", photo).appendTo("#photo"); 
         
+        var category = ["Click on a circle for info",
+                        "ADD",
+                        "Amgen Inc.",
+                        "Boehringer Ingelheim Pharmaceuticals Inc.",
+                        "arthritis",
+                        "asthma",
+                        "blood pressure",
+                        "cancer",
+                        "cholesterol",
+                        "diabetes",
+                        "erectile dysfunction",
+                        "flu",
+                        "generic",
+                        "Genentech Inc.",
+                        "Gilead Sciences Inc.",
+                        "GlaxoSmithKline",
+                        "HIV",
+                        "kidney",
+                        "Novo Nordisk Inc.",
+                        "osteoporosis",
+                        "Merck & Co. Inc.",
+                        "multiple sclerosis",
+                        "pain relief",
+                        "Pfizer Inc.",
+                        "psych",
+                        "respiratory",
+                        "Sanofi-Aventis",
+                        "stomach acid"
+                        ];
 
         var name = event.name;
-        if (name === "Click on a circle for info") {
+        for(var i = 0; i < category.length; i++){
+        if (category[i] == name) {
           $("#info").hide();
           return;
         }
-        if (name === "arthritis") {
-          $("#info").hide();
-          return;
-        }
-
-        if (name === "asthma") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "cancer") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "kidney") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "cholesterol") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "psych") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "HIV") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "diabetes") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "pain relief") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "respiratory") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "ADD") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "multiple sclerosis") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "generic") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "Boehringer Ingelheim Pharmaceuticals Inc.") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "GlaxoSmithKline") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "Genentech Inc.") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "Sanofi-Aventis") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "Gilead Sciences Inc.") {
-          $("#info").hide();
-          return;
-        }
-        if (name === "Novo Nordisk Inc.") {
-          $("#info").hide();
-          return;
-        }
+      }
 
         
         $("#drug-name").text(name);
